@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Happy 31st Monthsary</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@500;700&family=Cormorant+Garamond:ital,wght@0,400;0,600;1,400&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div id="hearts"></div>
+
+<main class="stage">
+
+  <!-- Envelope -->
+  <section id="envelopeWrap">
+    <p class="hint">A little something for you… tap to open 💌</p>
+    <div class="envelope" id="envelope" role="button" tabindex="0" aria-label="Open the letter">
+      <div class="flap"></div>
+      <div class="seal">♥</div>
+    </div>
+  </section>
+
+  <!-- Letter -->
+  <section id="letterWrap">
+    <div class="badge">31 Months of Us</div>
+    <article class="paper">
+      <div class="date" id="date"></div>
+      <h1 class="greeting" id="greeting"></h1>
+      <div class="body" id="body"></div>
+      <div class="signoff" id="signoff">
+        <div class="signature">
+          <div class="with">Forever yours,</div>
+          <div class="name" id="from"></div>
+        </div>
+        <figure class="couple-photo">
+          <img src="couple-photo.png" alt="A photo of the two of us together">
+        </figure>
+      </div>
+    </article>
+
+    <div class="counter" id="counter">
+      <div><b id="cYears">0</b><span>Years</span></div>
+      <div><b id="cMonths">0</b><span>Months</span></div>
+      <div><b id="cDays">0</b><span>Days</span></div>
+    </div>
+
+    <div class="actions">
+      <button class="btn" id="skipBtn">Skip typing ⏩</button>
+      <button class="btn" id="heartBtn">Send love 💖</button>
+      <button class="btn" id="replayBtn">Read again ↺</button>
+      <a class="btn" id="musicBtn" href="https://www.youtube.com/watch?v=0rdvK_J_wkM" target="_blank" rel="noopener noreferrer">Open on YouTube ↗</a>
+    </div>
+
+    <div class="music-player">
+      <iframe id="musicPlayer" title="YouTube music player" allow="autoplay; encrypted-media; picture-in-picture; web-share" allowfullscreen></iframe>
+    </div>
+  </section>
+
+</main>
+
+<script src="script.js"></script>
+</body>
+</html>
